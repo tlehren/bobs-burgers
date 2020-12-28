@@ -1,0 +1,137 @@
+
+/* Global */
+
+@font-face {
+  font-family: "Bobs-Burgers";
+  src: url(CSS/fonts/Bobs-Burgers.ttf) format("truetype");
+
+} 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+
+:root{
+  --primary-color: #F7DF24;
+  --secondary-color: #EF2431;
+  --text-color: #1F1F1F;
+
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h1, h2{
+font-weight: 700;
+line-height: 1.2
+margin 10px 0;
+font-family:'Bobs-Burgers', sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
+p{
+  margin: 10px 0;
+}
+
+img{
+  width: 100%;
+}
+
+
+/* Navbar */
+.navbar{
+  background-color: var(--primary-color) ;
+  color: #fff;
+}
+
+.logo{
+    max-width: 200px;
+}
+
+.logo:hover{
+  opacity: 70%;
+  transition: .3s;
+}
+
+.navbar ul{
+display: flex;
+}
+
+.navbar a{
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover{
+  color: var(--secondary-color);
+  transition: .3s;
+}
+
+.navbar .flex{
+  justify-content: space-between;
+}
+
+
+/* Hero */
+.hero{
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.hero h1{
+  font-weight: 900;
+}
+
+.hero p{
+  margin: 20px 0;
+}
+
+.hero .grid{
+  gap: 30px;
+
+}
+
+/* Burgers */
+
+.burgers .card{
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.burgers .card h4{
+text-transform: uppercase;
+}
+
+.burgers .card img{
+  max-width: 200px;
+  }
+
+.burgers .card:hover{
+  transform: translateY(-15px);
+
+}
+
+
+
+
+
+
+  
