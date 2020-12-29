@@ -1,5 +1,61 @@
+
+@font-face {
+  font-family: "Bobs-Burgers";
+  src: url(CSS/fonts/Bobs-Burgers.ttf) format("truetype");
+
+} 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+
+:root{
+  --primary-color: #F7DF24;
+  --secondary-color: #EF2431;
+  --text-color: #1F1F1F;
+
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h1, h2{
+font-weight: 700;
+line-height: 1.2
+margin 10px 0;
+font-family:'Bobs-Burgers', sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
+p{
+  margin: 10px 0;
+}
+
+img{
+  width: 100%;
+}
+
+
 .container{
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 2%;
@@ -55,6 +111,7 @@
 
   .grid-r{
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   
