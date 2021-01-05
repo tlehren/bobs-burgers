@@ -1,6 +1,12 @@
 .navbar{
-  background-color: var(--primary-color) ;
+  background-color: transparent;
   color: #fff;
+  position: absolute;
+  z-index: 100;
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
 }
 
 .logo{
@@ -17,8 +23,10 @@ display: flex;
 }
 
 .navbar a{
-  padding: 10px;
+  color: #fff;
+  padding: 0 5px;
   margin: 0 5px;
+  font-weight: 500;
 }
 
 .navbar a:hover{
@@ -33,8 +41,15 @@ display: flex;
 
 /* Hero */
 .hero{
-  background-color: var(--primary-color);
-  position: relative;
+  height: 100vh;
+  color: #fff;
+  background-image: url(/Images/bb-family-2.jpg);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: repeat-x;
+  background-position: bottom right;
+  background-size: contain;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
 }
 
 .hero h1{
@@ -45,12 +60,17 @@ display: flex;
   margin: 20px 0;
 }
 
-.hero .grid{
-  gap: 30px;
 
-}
 
 /* Burgers */
+
+.burger-grid {
+  background-image: url(/Images/bb-gene.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 .burgers .card{
   text-align: center;
