@@ -4,7 +4,7 @@
   position: absolute;
   z-index: 100;
   max-width: 1600px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   overflow: auto;
 }
@@ -30,8 +30,12 @@ display: flex;
 }
 
 .navbar a:hover{
-  color: var(--secondary-color);
+  color: var(--primary-color);
   transition: .3s;
+}
+
+.navbar .container {
+  width: 95%;
 }
 
 .navbar .flex{
@@ -39,15 +43,16 @@ display: flex;
 }
 
 
+
 /* Hero */
-.hero{
+.hero {
   height: 100vh;
   color: #fff;
-  background-image: url(/Images/bb-family-2.jpg);
-  background-color: rgba(0, 0, 0, 0.6);
-  background-repeat: repeat-x;
+  background-image: url(/Images/bb-family.png);
+  background-color: rgba(0,0,0,0.5);
+  background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: contain;
+  background-size: 65%;
   background-blend-mode: multiply;
   background-attachment: fixed;
 }
@@ -56,7 +61,7 @@ display: flex;
   font-weight: 900;
 }
 
-.hero p{
+.hero p {
   margin: 20px 0;
 }
 
@@ -64,17 +69,9 @@ display: flex;
 
 /* Burgers */
 
-.burger-grid {
-  background-image: url(/Images/bb-gene.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 .burgers .card{
   text-align: center;
-  transition: transform 0.2s;
+  transition: all .2s ease-in-out;
 }
 
 .burgers .card h4{
@@ -87,8 +84,42 @@ text-transform: uppercase;
 
 .burgers .card:hover{
   transform: translateY(-15px);
-
 }
+
+.burgers .grid-r {
+  align-items: stretch;
+}
+
+
+/* Team */
+.team .card {
+  box-shadow: none;
+  text-align: center;
+}
+
+.team .card img {
+  max-width: 200px;
+}
+
+.team .card img {
+  transition: all .2s ease-in-out;
+}
+.team .card img:hover {
+  transform: scale(1.1);
+}
+
+.team .card h4{
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+.team .flex {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
 
 
 
