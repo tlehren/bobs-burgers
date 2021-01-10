@@ -48,14 +48,17 @@ display: flex;
 .hero {
   height: 100vh;
   color: #fff;
+  background-image: linear-gradient(to right top, #344a53, #364f5a, #375560, #395a67, #3a606e);
+}
+
+/* .hero .grid {
   background-image: url(/Images/bb-family.png);
-  background-color: rgba(0,0,0,0.5);
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 65%;
-  background-blend-mode: multiply;
+  background-size: 55%;
   background-attachment: fixed;
-}
+
+} */
 
 .hero h1{
   font-weight: 900;
