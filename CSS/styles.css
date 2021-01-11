@@ -48,19 +48,14 @@ display: flex;
 .hero {
   height: 100vh;
   color: #fff;
-  background-image: linear-gradient(to right top, #344a53, #364f5a, #375560, #395a67, #3a606e);
-}
-
-/* .hero .grid {
-  background-image: url(/Images/bb-family.png);
+  background-image: url(/Images/bb-family.png), linear-gradient(to right top, #344a53, #364f5a, #375560, #395a67, #3a606e);
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 55%;
+  background-size: 55%, cover;
   background-attachment: fixed;
+}
 
-} */
-
-.hero h1{
+.hero h1 {
   font-weight: 900;
 }
 
@@ -95,9 +90,14 @@ text-transform: uppercase;
 
 
 /* Team */
+
+.team {
+  background-color: whitesmoke;
+}
 .team .card {
   box-shadow: none;
   text-align: center;
+  background-color: transparent;
 }
 
 .team .card img {
@@ -116,9 +116,11 @@ text-transform: uppercase;
   margin-top: 1em;
 }
 
+.team .grid-r {
+  align-items: stretch;
+}
 .team .flex {
   flex-direction: column;
-  justify-content: space-between;
 }
 
 
