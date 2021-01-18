@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="CSS/utlities.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+
   <title>Bob's Burgers</title>
 </head>
 <body>
@@ -18,6 +19,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="#burgers">Burgers</a></li>
           <li><a href="#team">The Team</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -35,7 +37,7 @@
     </section>
 
     <!-- Burgers -->
-    <section class="burgers my-3 py-3">
+    <section class="burgers py-5">
       <div class="burger-text text-center">
         <a name="burgers"></a>
         <h2>Our Burgers</h2>
@@ -78,7 +80,7 @@
     </section>
 
     <!-- Team -->
-    <section class="team my-3 py-3">
+    <section class="team text-center py-5">
       <a name="team"></a>
       <h2>"Meat" the Team</h2>
       <div class="container grid grid-r">
@@ -87,22 +89,22 @@
           <h4>Bob Belcher</h4>
           <p>Description</p>
         </div>
-        <div class="card flex">
+        <div class="card">
           <img src="Images/bb-linda.png" alt="linda-belcher">
           <h4>Linda Belcher</h4>
           <p>Description</p>
         </div>
-        <div class="card flex">
+        <div class="card">
           <img src="Images/bb-tina.png" alt="tina-belcher">
           <h4>Tina Belcher</h4>
           <p>Description</p>
         </div>
-        <div class="card flex">
+        <div class="card">
           <img src="Images/bb-gene.png" alt="gene-belcher">
           <h4>Gene Belcher</h4>
           <p>Description</p>
         </div>
-        <div class="card flex">
+        <div class="card">
           <img src="Images/bb-louise.png" alt="louise-belcher">
           <h4>Louise Belcher</h4>
           <p>Description</p>
@@ -111,10 +113,43 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container grid grid-r">
-      <p>text</p>
+  <footer class="footer py-3">
+    <a name="contact"></a>
+    <div class="container grid grid-3">
+      <div class="hours">
+        <h4>Hours</h4>
+        <ul>
+          <li>
+            Monday - Thursday ............. 9:00am-8:00pm
+          </li>
+          <li>
+            Friday-Saturday ............. 9:00am-10:00pm
+          </li>
+          <li>
+            Sunday ............. CLOSED
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h4>Contact</h4>
+        <address>
+          <p><i class="fa fa-phone"></i> 203-123-4566</p>
+          <p><i class="fa fa-envelope"></i> bob@bobsburgers.net</p>
+          <p><i class="fa fa-map-marker-alt"></i> 44 Ocean Ave Seymour's Bay, NJ 08226 </p>
+        </address>
+      </div>
+      <div class="first">
+        <a href="index.html"> <img src="Images/bb-logo.png" alt="Bob's Burgers logo" class="logo"> </a>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+        <p>Copyright © 2021</p>
+      </div>
+
     </div>
+ 
   </footer>
 
   

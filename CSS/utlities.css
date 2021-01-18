@@ -40,7 +40,7 @@ h2 {
   margin: 10px 0;
 }
 
-p {
+p, li {
   margin: 10px 0;
 }
 
@@ -82,6 +82,8 @@ img {
   transition: 0.3s ease-in-out;
 }
 
+/* Layout */
+
 .flex {
   display: flex;
   justify-content: center;
@@ -105,6 +107,7 @@ img {
 .grid-r {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
 
 /* Margin */
 
@@ -303,5 +306,24 @@ blockquote {
   blockquote {
     font-size: 1.5em;
     line-height: 1.45833333;
+  }
+}
+
+
+/* Devices */
+
+@media(max-width: 768px) {
+  body{
+    text-align: center;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media(max-width: 500px) {
+  .container {
+    width: 95%;
   }
 }
